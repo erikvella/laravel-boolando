@@ -1,0 +1,131 @@
+@use './variabiles';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.header-top{
+  width: 100%;
+  background-color: rgb(211, 117, 10);
+  position: fixed;
+  top: 0;
+  box-shadow:0 1px 3px;
+  z-index: 999;
+}
+
+.container-head{
+  width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+justify-content: space-between;
+align-items: center;
+color: white;
+
+}
+
+
+.container-main{
+  width: 90%;
+max-width: 1200px;
+margin: 100px auto;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.card{
+  width: 350px;
+  
+  height: 580px;
+}
+
+.discount{
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.heart{
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.card:hover .heart{
+  color: red;
+}
+.card{
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.descr{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+img{
+  max-width: 350px;
+
+}
+
+.img1{
+  display: block;
+}
+.img2{
+  display: none;
+}
+.card:hover .img1{
+  display: none;
+}
+
+.card:hover .img2{
+  display: block;
+}
+// stili del footer
+
+.container-foot{
+  width: 100%;
+  color: white;
+  height: 150px;
+  border-bottom: 1px solid white;
+  background-color: rgb(22, 21, 21);
+}
+
+
+.footsx{
+  width: 50%;
+  
+}
+
+.footdx{
+  width: 50%;
+  
+}
+
+.legal{
+  margin-top: 20px;
+
+}
+
+ h4{
+  margin-top: 30px;
+  
+ } 

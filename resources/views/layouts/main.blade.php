@@ -12,7 +12,10 @@
 </head>
 
 <body>
-    <h1>main</h1>
+
+    @include('partials.header')
+
+    @yield('content')
 </body>
 
 </html>

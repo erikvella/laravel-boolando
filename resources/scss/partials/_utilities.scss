@@ -1,0 +1,40 @@
+@use './variabiles' as *;
+
+// stili generali per la costruzione della pagina
+
+.d-flex{
+  display: flex;
+}
+
+.p-relative{
+  position: relative;
+}
+
+.p-absolute{
+  position: absolute;
+}
+
+.debug{
+  border: 1px solid green;
+}
+
+#logo{
+  max-width: 200px;
+}
+
+.py-10{
+  padding-top: 10px ;
+  padding-bottom: 10px;
+}
+
+.marca{
+  color: rgb(126, 121, 121);
+}
+.red-price{
+  color: red;
+}
+
+.barred-price{
+  text-decoration: line-through;
+}
+
