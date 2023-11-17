@@ -4,7 +4,7 @@
     <div class="container-main d-flex ">
 
 
-        <h1>questa è la homepage</h1>
+        <h1>questa è la pagina UOMO</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus inventore beatae pariatur exercitationem
             voluptatum necessitatibus. Sapiente quis labore ut repudiandae reiciendis quae ipsa, ad ipsam corrupti, in sequi
             accusantium alias enim tenetur quasi deleniti culpa nostrum asperiores dicta, quam consequatur! Quos architecto
@@ -18,4 +18,8 @@
 
 
     </div>
+@endsection
+
+@section('title')
+    | Uomo
 @endsection

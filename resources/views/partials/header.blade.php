@@ -7,11 +7,12 @@
         <div class="container-head d-flex ">
             <div>
                 <nav>
-                    <ul>
+                    <ul> @dump(Route::currentRouteName())
                         <li>
-                            <a href="#">Donna</a>
-                            <a href="#">Uomo</a>
-                            <a href="#">Bambino</a>
+                            <a class="active" href="{{ route('donna') }}">Donna</a>
+                            <a href="{{ route('uomo') }}">Uomo</a>
+                            <a href="{{ route('bambino') }}">Bambino</a>
+                            <a href="{{ route('home') }}">Home</a>
                         </li>
                     </ul>
                 </nav>
