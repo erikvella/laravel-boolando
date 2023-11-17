@@ -7,12 +7,17 @@
         <div class="container-head d-flex ">
             <div>
                 <nav>
-                    <ul> @dump(Route::currentRouteName())
+                    <ul>
                         <li>
-                            <a class="active" href="{{ route('donna') }}">Donna</a>
-                            <a href="{{ route('uomo') }}">Uomo</a>
-                            <a href="{{ route('bambino') }}">Bambino</a>
-                            <a href="{{ route('home') }}">Home</a>
+                            {{-- facciamo un ternario per impostare la classe active sull'elemento corrispondente alla pagina che sto vedendo --}}
+                            <a class="{{ Route::currentRouteName() == 'donna' ? 'active' : '' }}"
+                                href="{{ route('donna') }}">Donna</a>
+                            <a class="{{ Route::currentRouteName() == 'uomo' ? 'active' : '' }}"
+                                href="{{ route('uomo') }}">Uomo</a>
+                            <a class="{{ Route::currentRouteName() == 'bambino' ? 'active' : '' }}"
+                                href="{{ route('bambino') }}">Bambino</a>
+                            <a class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                                href="{{ route('home') }}">Home</a>
                         </li>
                     </ul>
                 </nav>
