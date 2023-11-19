@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    // carico da config l'array di prodotti da mostrare
+    $products = config('products');
+
+    return view('home' ,compact('products'));
 })->name('home');
 
 Route::get('/dettagli-prodotto', function () {
